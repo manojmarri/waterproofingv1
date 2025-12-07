@@ -1,13 +1,9 @@
 import { Routes } from '@angular/router';
-import { Dashboard } from './Modules/dashboard/dashboard';
-import { Aboutwork } from './Modules/aboutwork/aboutwork';
-import { Services } from './Modules/services/services';
-import { Contact } from './Modules/contact/contact';
 
 export const routes: Routes = [
-    { path: '', component: Dashboard },
-    { path: 'dashboard', component: Dashboard },
-    { path: 'about', component: Aboutwork },
-    { path: 'services', component: Services },
-    { path: 'contact', component: Contact }
+    { path: '', loadComponent: () => import('../app/Modules/dashboard/dashboard').then(m => m.Dashboard) },
+    { path: 'dashboard', loadComponent: () => import('../app/Modules/dashboard/dashboard').then(m => m.Dashboard) },
+    { path: 'about', loadComponent: () => import('../app/Modules/aboutwork/aboutwork').then(m => m.Aboutwork) },
+    { path: 'services', loadComponent: () => import('../app/Modules/services/services').then(m => m.Services) },
+    { path: 'contact', loadComponent: () => import('../app/Modules/contact/contact').then(m => m.Contact) }
 ];
