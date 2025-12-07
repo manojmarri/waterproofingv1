@@ -12,7 +12,7 @@
     /* Default color used for the majority of the text content across the entire website */
     --heading-color: #273d4e;
     /* Color for headings, subheadings and title throughout the website */
-    --accent-color: #ff4a17;
+    --accent-color: #ffbd59;
     /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
     --surface-color: #ffffff;
     /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
@@ -24,7 +24,7 @@
 :root {
     --nav-color: #e5eaee;
     /* The default color of the main navmenu links */
-    --nav-hover-color: #ff4a17;
+    --nav-hover-color: #ffbd59;
     /* Applied to main navmenu links when they are hovered over or active */
     --nav-mobile-background-color: #ffffff;
     /* Used as the background color for mobile navigation menu */
@@ -32,7 +32,7 @@
     /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
     --nav-dropdown-color: #444444;
     /* Used for navigation links of the dropdown items in the navigation menu. */
-    --nav-dropdown-hover-color: #ff4a17;
+    --nav-dropdown-hover-color: #ffbd59;
     /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
@@ -62,7 +62,7 @@
     margin: 0;
     width: 72px;
     height: 72px;
-    background: #ff4a17;
+    background: #ffbd59;
     color: #ffffff;
     border: 6px solid #ffffff;
     border-radius: 50px;
@@ -92,16 +92,16 @@
 }
 
 .services .service-item:hover .details h3 {
-    color: #ff4a17;
+    color: #ffbd59;
 }
 
 .services .service-item:hover .details .icon {
     background: #ffffff;
-    border: 2px solid #ff4a17;
+    border: 2px solid #ffbd59;
 }
 
 .services .service-item:hover .details .icon i {
-    color: #ff4a17;
+    color: #ffbd59;
 }
 
 .services .service-item:hover .img img {
