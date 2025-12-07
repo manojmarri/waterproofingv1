@@ -1,5 +1,5 @@
 <div class="header">
-  <h1>DR FIXIT </h1>
+  <h1 style="cursor: pointer;" (click)="PageRedirect('/dashboard')">DR FIXIT </h1>
   <input class="hidden" id="drawer-input" type="checkbox" (click)="onclick()">
   <label for="drawer-input" class="drawer-open">
     <span></span>
@@ -10,22 +10,22 @@
     <ul class="items">
       <li class="item">
         <a>
-          <p id="IList" [style.color]="Route_Name == 'dashboard' ? 'rgb(215, 215, 198)':Route_Name == '' ? 'rgb(215, 215, 198)':''">Home</p>
+          <p id="IList" [style.color]="Route_Name == 'dashboard' ? 'rgb(215, 215, 198)':Route_Name == '' ? 'rgb(215, 215, 198)':''" (click)="PageRedirect('/dashboard')" >Home</p>
         </a>
       </li>
       <li class="item">
         <a>
-          <p id="IList" [style.color]="Route_Name == 'about' ? 'rgb(215, 215, 198)':''">About</p>
+          <p id="IList" [style.color]="Route_Name == 'about' ? 'rgb(215, 215, 198)':''" (click)="PageRedirect('/about')">About</p>
         </a>
       </li>
       <li class="item">
         <a>
-          <p id="IList" [style.color]="Route_Name == 'services' ? 'rgb(215, 215, 198)':''">Services</p>
+          <p id="IList" [style.color]="Route_Name == 'services' ? 'rgb(215, 215, 198)':''" (click)="PageRedirect('/services')">Services</p>
         </a>
       </li>
       <li class="item">
         <a>
-          <p id="IList" [style.color]="Route_Name == 'about' ? 'rgb(215, 215, 198)':''">Contact</p>
+          <p id="IList" [style.color]="Route_Name == 'contact' ? 'rgb(215, 215, 198)':''" (click)="PageRedirect('/contact')" >Contact</p>
         </a>
       </li>
     </ul>

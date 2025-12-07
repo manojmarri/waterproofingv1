@@ -1,0 +1,403 @@
+// // .main{
+// //     background-image: url('../../Assets/imgs/Herobg.jpg');
+// //     height: 100vh;
+// //     background-position: center;
+// //     background-repeat: no-repeat;
+// //     background-size: cover;
+// //     // filter: blur(2px);
+// // }
+// // .bg {
+// //   background-color: rgb(0,0,0); /* Fallback color */
+// //   background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+// //   color: white;
+// //   font-weight: bold;
+// //   border: 3px solid #f1f1f1;
+// //   position: absolute;
+// //   top: 50%;
+// //   left: 50%;
+// //   transform: translate(-50%, -50%);
+// //   z-index: 2;
+// //   width: 80%;
+// //   padding: 20px;
+// //   text-align: center;
+// // }
+
+
+// :root {
+//   --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+//   --heading-font: "Raleway",  sans-serif;
+//   --nav-font: "Inter",  sans-serif;
+// }
+
+// /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
+// :root { 
+//   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
+//   --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
+//   --heading-color: #273d4e; /* Color for headings, subheadings and title throughout the website */
+//   --accent-color: #ff4a17; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+//   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+//   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+// }
+
+// /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
+// :root {
+//   --nav-color: #e5eaee;  /* The default color of the main navmenu links */
+//   --nav-hover-color: #ff4a17; /* Applied to main navmenu links when they are hovered over or active */
+//   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
+//   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+//   --nav-dropdown-color: #444444; /* Used for navigation links of the dropdown items in the navigation menu. */
+//   --nav-dropdown-hover-color: #ff4a17; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+// }
+
+
+// .light-background {
+//   --background-color: #f1f4fa;
+//   --surface-color: #ffffff;
+// }
+
+// .dark-background {
+//   --background-color: #000910;
+//   --default-color: #ffffff;
+//   --heading-color: #ffffff;
+//   --surface-color: #28323a;
+//   --contrast-color: #ffffff;
+// }
+
+// /* Smooth scroll */
+// :root {
+//   scroll-behavior: smooth;
+// }
+
+// body {
+//   color: var(--default-color);
+//   background-color: var(--background-color);
+//   font-family: var(--default-font);
+// }
+
+// a {
+//   color: var(#ff4a17);
+//   text-decoration: none;
+//   transition: 0.3s;
+// }
+
+// a:hover {
+//   color: color-mix(in srgb, var(#ff4a17), transparent 25%);
+//   text-decoration: none;
+// }
+
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6 {
+//   color: var(--heading-color);
+//   font-family: var(--heading-font);
+// }
+
+// .hero {
+//   width: 100%;
+//   min-height: 100vh;
+//   position: relative;
+//   padding: 80px 0;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+// }
+
+// .hero img {
+//   position: absolute;
+//   inset: 0;
+//   display: block;
+//   width: 100%;
+//   height: 100%;
+//   object-fit: cover;
+//   z-index: 1;
+// }
+
+// .hero:before {
+//   content: "";
+//   background: color-mix(in srgb, var(--background-color), transparent 30%);
+//   position: absolute;
+//   inset: 0;
+//   z-index: 2;
+// }
+
+// .hero .container {
+//   position: relative;
+//   z-index: 3;
+// }
+
+// .hero h2 {
+//   margin: 0;
+//   font-size: 48px;
+//   font-weight: 700;
+//   text-transform: uppercase;
+// }
+
+// .hero p {
+//   color: color-mix(in srgb, var(--default-color), transparent 20%);
+//   margin: 10px 0 0 0;
+//   font-size: 24px;
+// }
+
+// .hero .btn-get-started {
+//   background: #ff4a17;;
+//   color: var(--contrast-color);
+//   font-weight: 400;
+//   font-size: 14px;
+//   letter-spacing: 1px;
+//   display: inline-block;
+//   padding: 10px 30px;
+//   border-radius: 4px;
+//   transition: 0.3s;
+//   text-transform: uppercase;
+// }
+
+// .hero .btn-get-started:hover {
+//   background: color-mix(in srgb, #ff4a17, transparent 20%);
+// }
+
+// .hero .btn-watch-video {
+//   font-size: 16px;
+//   transition: 0.5s;
+//   margin-left: 25px;
+//   font-weight: 400;
+//   color: var(--default-color);
+// }
+
+// .hero .btn-watch-video i {
+//   color: var(#ff4a17);
+//   font-size: 32px;
+//   transition: 0.3s;
+//   line-height: 0;
+//   margin-right: 8px;
+// }
+
+// .hero .btn-watch-video:hover {
+//   color: var(#ff4a17);
+// }
+
+// .hero .btn-watch-video:hover i {
+//   color: color-mix(in srgb, var(#ff4a17), transparent 20%);
+// }
+
+// @media (max-width: 768px) {
+//   .hero h2 {
+//     font-size: 32px;
+//   }
+
+//   .hero p {
+//     font-size: 18px;
+//   }
+// }
+
+
+// .about h3 {
+//   font-weight: 700;
+//   font-size: 28px;
+//   margin-bottom: 20px;
+// }
+
+// .about .fst-italic {
+//   color: color-mix(in srgb, var(#444444), var(#ffffff) 50%);
+// }
+
+// .about .content ul {
+//   list-style: none;
+//   padding: 0;
+// }
+
+// .about .content ul li {
+//   padding: 0 0 10px 30px;
+//   position: relative;
+// }
+
+// .about .content ul i {
+//   position: absolute;
+//   font-size: 20px;
+//   left: 0;
+//   top: -3px;
+//   color: #ffbd59;
+// }
+
+// .about .content p:last-child {
+//   margin-bottom: 0;
+// }
+
+// .about .pulsating-play-btn {
+//   position: absolute;
+//   left: calc(50% - 47px);
+//   top: calc(50% - 47px);
+// }
+
+
+:root {
+  --bg-start: #FFD2B5;   /* soft peach / coral */
+  --bg-mid: #FFF6F0;     /* warm white glow */
+  --bg-end: #E8EAF6;     /* pale lavender / blue tint */
+  --card-bg: rgba(255, 255, 255, 0.40);
+  --card-border: rgba(255, 255, 255, 1);
+  --radius: 20px;
+  --gap: 24px;
+  --blur: 7.5px;
+  --shadow: 0 1px 0 rgba(0, 0, 0, .02), 0 10px 30px rgba(0, 0, 0, .08);
+  --duration: 60s;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, "Helvetica Neue", Arial;
+  color:#111;
+}
+
+.page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  /* smooth pastel arc similar to the image */
+  background: radial-gradient(
+      circle at 20% 30%,
+      var(--bg-start) 0%,
+      var(--bg-mid) 50%,
+      var(--bg-end) 100%
+  );
+  padding: 32px;
+}
+
+/* MARQUEE */
+.marquee{
+  width: min(1600px, 100%);
+  overflow: hidden;
+  padding: 8px;
+  position: relative;
+}
+.track{
+  display: flex;
+  gap: var(--gap);
+  width: max-content;               
+  animation: scroll var(--duration) linear infinite;
+  will-change: transform;
+}
+@keyframes scroll{
+  from{ transform: translateX(0); }
+  to  { transform: translateX(-50%); }  
+}
+
+/* CARD */
+.card{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap: 67px;                         
+  width: clamp(260px, 28vw, 390px);  
+  padding:32px;
+  border-radius: var(--radius);
+  border:1px solid var(--card-border);
+  background: var(--card-bg);
+  backdrop-filter: blur(var(--blur));
+  -webkit-backdrop-filter: blur(var(--blur));
+  box-shadow: var(--shadow);
+}
+
+.logo{
+  color:#000;
+  line-height:0;
+}
+
+.stat .percent{
+  font-weight: 800;
+  letter-spacing: .5px;
+  font-size: clamp(40px, 7vw, 64px);
+}
+.stat .desc{
+  margin: 10px 0 0;
+  line-height: 1.35;
+  color: rgba(0,0,0,.75);
+  font-size: clamp(14px, 2.4vw, 18px);
+}
+
+.author{
+  width:100%;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+}
+.name{
+  font-weight:700;
+  font-size: 16px;
+}
+.title{
+  margin-top:6px;
+  font-size:13px;
+  color: rgba(0,0,0,.65);
+}
+
+/* colorful ring avatar */
+.avatar{
+  width:52px; height:52px; flex:0 0 52px;
+  display:grid; place-items:center;
+  border-radius:50%;
+  padding:3px;
+  background: conic-gradient(#63f 0 25%, #0fd 25% 50%, #ff0 50% 75%, #f0f 75% 100%);
+  box-shadow: 0 6px 20px rgba(0,0,0,.15);
+}
+.avatar img{
+  width:100%; height:100%;
+  border-radius:50%;
+  display:block;
+}
+
+/* responsive adjustments */
+@media (max-width: 900px){
+  .page{ padding:20px; }
+  .track{ gap: 18px; }
+  .card{ gap: 48px; padding:28px; }
+}
+@media (max-width: 520px){
+  .card{ width: clamp(240px, 80vw, 360px); padding:24px; gap:36px; }
+  .stat .desc{ font-size: 14px; }
+}
+
+/* reduced motion preference */
+@media (prefers-reduced-motion: reduce){
+  .track{ animation-duration: 0.001s; }
+}
+
+// Default duration (overwritten by JS, but good fallback)
+.track {
+  --duration: 20s; 
+}
+
+.slider-container {
+  overflow: hidden;
+  width: 100%;
+}
+
+.track {
+  display: flex;
+  // This animation moves the entire track to the left by 50%
+  animation: scroll var(--duration) linear infinite; 
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    // Move exactly half of the total duplicated content (one full cycle)
+    transform: translateX(-50%); 
+  }
+}
+
+// Example styles for items to ensure horizontal layout
+.item {
+    padding: 10px;
+    margin-right: 20px; 
+    flex-shrink: 0; // Prevent items from shrinking
+    min-width: 200px; // Ensure items have a fixed width
+}
