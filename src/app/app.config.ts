@@ -12,10 +12,10 @@ export const appConfig: ApplicationConfig = {
     provideRouter(routes),
     BrowserModule,
     // provideAnimations(), 
-    provideToastr({
-      timeOut: 2000,
-      positionClass: 'toast-bottom-right',
-      preventDuplicates: true,
-    })
+    // provideToastr({
+    //   timeOut: 2000,
+    //   positionClass: 'toast-bottom-right',
+    //   preventDuplicates: true,
+    // })
   ]
 };

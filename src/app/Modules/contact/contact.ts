@@ -12,7 +12,7 @@ import { ToastrService } from 'ngx-toastr';
 export class Contact {
   whatsappNumber: string = '9948227227';
   defaultMessage: string = 'Hello';
-  toaster = inject(ToastrService)
+  // toaster = inject(ToastrService)
 
   openWhatsAppChat(): void {
     const encodedMessage = encodeURIComponent(this.defaultMessage);
@@ -21,6 +21,6 @@ export class Contact {
   }
 
   submit(){
-    this.toaster.warning('Please whatsapp us.. Form is in Progress')
+    // this.toaster.warning('Please whatsapp us.. Form is in Progress')
   }
 }

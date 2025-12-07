@@ -10,7 +10,7 @@ import { ToastrService } from 'ngx-toastr';
 export class Footer {
   whatsappNumber: string = '9948227227';
   defaultMessage: string = 'Hello';
-  toaster = inject(ToastrService)
+  // toaster = inject(ToastrService)
 
   openWhatsAppChat(): void {
     const encodedMessage = encodeURIComponent(this.defaultMessage);
@@ -19,6 +19,6 @@ export class Footer {
   }
 
   toast(){
-    this.toaster.warning('Available Soon')
+    // this.toaster.warning('Available Soon')
   }
 }
