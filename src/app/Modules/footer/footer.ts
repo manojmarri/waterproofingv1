@@ -18,7 +18,17 @@ export class Footer {
     window.open(whatsappLink, '_blank');
   }
 
-  toast(){
+  openfacebook() {
+    const insta ='https://www.facebook.com/share/1HC7iis22K/?mibextid=wwXIfr'
+     window.open(insta, '_blank');
+  }
+
+  openinsta() {
+    const fb = 'https://www.instagram.com/drfixit_waterproofing?igsh=ZHZhdnZleTE4dzlu&utm_source=qr'
+    window.open(fb, '_blank');
+  }
+
+  toast() {
     // this.toaster.warning('Available Soon')
   }
 }
